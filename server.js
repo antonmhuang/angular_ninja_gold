@@ -4,7 +4,8 @@ const path = require('path');
 var app = express();
 var mongoose = require('mongoose');
 
-app.use(express.static(path.join(__dirname+"/client/dist/client")));
+// app.use(express.static(path.join(__dirname+"/client/dist/client")));
+app.use(express.static(path.join(__dirname + "/public/dist/public")));
 app.use(bp.json());
 app.use(bp.urlencoded({extended:true}));
 
@@ -21,6 +22,12 @@ mongoose.model('Ninja', NinjaSchema);
 var Ninja = mongoose.model('Ninja');
 
 // ------------ ROUTES AND LOCATIONS BELOW -------------------
+
+
+
+
+
+
 
 
 
