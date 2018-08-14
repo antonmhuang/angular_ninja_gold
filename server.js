@@ -29,4 +29,4 @@ var Ninja = mongoose.model('Ninja');
 //----------PORT LISTENER ------------------------------------
 app.listen(8000,function(){
     console.log("Now serving on 8000");
-})
+});
